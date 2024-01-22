@@ -1,6 +1,39 @@
-*{
+
+/* #region Common rules */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+.container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* #endregion Common rules */
+
+/* #region Header */
+#site_header {
+    height: 50px;
+    background-color: orange;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.categories > a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    max-height: 50%;
+}
+
+/* #endregion Header */

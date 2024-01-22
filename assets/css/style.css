@@ -11,13 +11,16 @@
     height: 100%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid black;
 }
 
 /* #endregion Common rules */
 
 /* #region Header */
+
 #site_header {
     height: 50px;
     background-color: orange;
@@ -37,3 +40,49 @@
 }
 
 /* #endregion Header */
+
+/* #region Main */
+
+#site_main{
+    margin-top: 100px;
+}
+
+img{
+    height: 300px;
+}
+
+.card{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left:0;
+    display: none;
+}
+
+.card:hover .overlay{
+    display: block;
+}
+
+.info {
+    position: absolute;
+    left: 0;
+    top: 70%;
+    display: flex;
+    gap: 1rem;
+}
+
+.heart{
+    position: absolute;
+    top: 2%;
+    right: 0;
+    border: 1px solid black;
+    padding: 0 0.3rem;
+    background-color: white;
+}
+
+.heart:hover{
+    color: red;
+}
